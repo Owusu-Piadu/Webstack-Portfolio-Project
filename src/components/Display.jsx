@@ -4,6 +4,7 @@ import DisplayHome from './DisplayHome';
 import DisplayAlbum from './DisplayAlbum';
 import DisplaySong from './DisplaySong';
 import { albumsData } from '../assets/assets'; // Assuming your album data is here
+import { shouldUseFlatConfig } from 'eslint/use-at-your-own-risk';
 
 const Display = () => {
   const displayRef = useRef();
@@ -34,3 +35,4 @@ const Display = () => {
 };
 
 export default Display;
+
