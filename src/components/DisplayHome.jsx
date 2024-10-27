@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import { albumsData, songsData } from '../assets/assets'
 import AlbumItem from './AlbumItem'
 import SongItem from './SongItem'
+import Footer from './Footer'
 
 const DisplayHome = () => {
   return (
@@ -20,6 +21,8 @@ const DisplayHome = () => {
         {songsData.map((item,index)=>(<SongItem key={index} name={item.name} desc={item.desc} id={item.id} image={item.image} />))}
         </div>
      </div>
+
+     <Footer /> 
     </>
   )
 }
