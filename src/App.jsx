@@ -3,6 +3,7 @@ import Sidebar from './components/sidebar'
 import Player from './components/Player'
 import Display from './components/Display'
 import { PlayerContext } from './context/PlayerContext'
+import Footer from './components/Footer'
 
 const App = () => {
 

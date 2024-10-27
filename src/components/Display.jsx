@@ -6,6 +6,7 @@ import DisplaySong from './DisplaySong';
 import { albumsData } from '../assets/assets'; // Assuming your album data is here
 
 
+
 const Display = () => {
   const displayRef = useRef();
   const location = useLocation();
