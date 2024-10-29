@@ -60,7 +60,7 @@ const Footer = () => {
         </div>
 
         {/* Horizontal Line Bar */}
-        <hr className="border-white my-4 border-t-18" />
+        <hr className="border-white-400 my-4 border-t-18"/>
 
         {/* Copyright Notice */}
         <div className="text-center text-sm">

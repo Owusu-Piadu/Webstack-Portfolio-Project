@@ -3,7 +3,7 @@ import { assets } from '../assets/assets';
 import { PlayerContext } from '../context/PlayerContext';
 
 const Player = () => {
-  const { track, seekBar, seekBg, playStatus, play, pause, time } = useContext(PlayerContext);
+  const { track, seekBar, seekBg, playStatus, play, pause, time, previous, next } = useContext(PlayerContext);
 
   // Helper function to format time
   const formatTime = (timeValue) => {
@@ -23,7 +23,7 @@ const Player = () => {
       <div className='flex flex-col items-center gap-1 m-auto'>
         <div className='flex gap-4'>
           <img className='w-4 cursor-pointer' src={assets.shuffle_icon} alt='Shuffle' aria-label="Shuffle" />
-          <img className='w-4 cursor-pointer' src={assets.prev_icon} alt='Previous' aria-label="Previous" />
+          <img onClick={previous} className='w-4 cursor-pointer' src={assets.prev_icon} alt='Previous' aria-label="Previous" />
           
           {playStatus ? (
             <img onClick={pause} className='w-4 cursor-pointer' src={assets.pause_icon} alt='Pause' aria-label="Pause" />
@@ -31,7 +31,7 @@ const Player = () => {
             <img onClick={play} className='w-4 cursor-pointer' src={assets.play_icon} alt='Play' aria-label="Play" />
           )}
           
-          <img className='w-4 cursor-pointer' src={assets.next_icon} alt='Next' aria-label="Next" />
+          <img onClick={next} className='w-4 cursor-pointer' src={assets.next_icon} alt='Next' aria-label="Next" />
           <img className='w-4 cursor-pointer' src={assets.loop_icon} alt='Loop' aria-label="Loop" />
         </div>
         
