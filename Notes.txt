@@ -1,0 +1,17 @@
+ npm install cloudinary cors dotenv express mongoose multer nodemon
+
+Dependencies
+React
+Vites
+fortawesome
+react-dom
+tailwindcss
+
+Dependencies
+cloudinary - store images
+cors - connect frontend to backend
+dotenv - store environment variables
+express - create backend API
+mongoose - connect to Database and manage
+multer - upload images and mp3 files
+nodemon - helps in running script for the project
